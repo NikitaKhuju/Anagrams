@@ -22,7 +22,7 @@ bool isAnagram(std::string s, std::string t) {
             map_pair[ch]--; // if same character is seen, we decrease its frequency in the map so that if the final frequency is zero, the character is present in both strings with same frequency
         }
         else {
-            map_pair[ch]++; // incase we forgot to check the different length of strings, this line will help that stings of different lengths are not anagrams as if increases frequency of a new character if found
+            map_pair[ch]++; //  this line will help increase frequency of a new character if found
         }
     }
 
